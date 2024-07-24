@@ -7,10 +7,7 @@ import com.assignment.vance.service.DataService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.Date;
@@ -38,5 +35,9 @@ public class DataController {
             log.info(e.toString());
             return responseHandler.setMessageResponse(-2);
         }
+    }
+    @GetMapping("/hello")
+    public String helloWorld() {
+        return "Hello, World!";
     }
 }
