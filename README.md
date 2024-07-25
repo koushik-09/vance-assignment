@@ -90,4 +90,5 @@ The application is hosted on render and can be accessed using
 ```
 https://vance-assignment.onrender.com/api
 ```
+**If server sends no response or does not load, please wait for 1-2 minutes and try again as render takes down service when it is inactive.**
 
